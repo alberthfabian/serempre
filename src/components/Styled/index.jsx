@@ -42,9 +42,11 @@ export const PADDING24 = '24px';
 
 export const WHITE = '#FFFFFF';
 export const GREY_BORDER = '#EEEFF2';
-export const LIGHT_GREY = '#F5F5F7';
+export const DARK_BORDER = '#B6BCC6';
 // export const GREY = '#D2D2D7';
 export const GREY = '#D2D2D7';
+export const LIGHT_GREY = '#F5F5F7';
+export const SOFT_GREY = '#D8DCE0';
 export const DARK_GREY = '#6B7280';
 export const RED = '#CB253C';
 export const BLACK = '#111111';

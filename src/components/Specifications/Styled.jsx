@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { MEDIUM, SIZE19, HEIGHT24, BLACK, device, ZERO, SPACE48, WIDTH298, GREY_BORDER, RADIUS, SPACE12, SIZE14, HEIGHT20, DARK_GREY, NORMAL, PADDING24, PADDING4, SPACE16, SPACE20, WIDTH200, SPACE2, HEIGHT16 } from '../Styled';
+import { MEDIUM, SIZE19, HEIGHT24, BLACK, device, ZERO, SPACE48, WIDTH298, GREY_BORDER, RADIUS, SPACE12, SIZE14, HEIGHT20, DARK_GREY, NORMAL, PADDING24, PADDING4, SPACE16, SPACE20, WIDTH200, SPACE2, HEIGHT16, DARK_BORDER, BLUE, SOFT_GREY } from '../Styled';
 
 export const H3 = styled.h3 `
   font-family: 'Roboto',sans-serif; 
@@ -13,11 +13,31 @@ export const H3 = styled.h3 `
   }
 `
 
-export const Div = styled.div ` 
+export const Div = styled.button ` 
+  background-color: transparent;
+  border: 0px solid;
+  outline: none;
+  text-align: left;
   border: 2px solid ${GREY_BORDER};
   border-radius: ${RADIUS};
-  padding-top: ${PADDING24};
+  padding: ${PADDING24} ${ZERO} ${PADDING4} ${ZERO};
   margin-bottom: ${SPACE16};
+  cursor: pointer;
+  :hover {
+    border: 2px solid ${DARK_BORDER};
+  }
+  ::selection {
+    border: 2px solid ${BLUE};
+  }
+  :focus {
+    border-radius: ${RADIUS};
+    border: 2px solid ${BLUE};
+  }
+  :active {
+    border-radius: ${RADIUS};
+    border: 2px solid ${BLUE};
+    box-shadow: 0 0 1pt 3pt ${SOFT_GREY};
+  }
   @media ${device.mobileS} {
     width: ${WIDTH298};
   }
@@ -50,6 +70,22 @@ export const Coverage = styled.div `
   margin-bottom: ${SPACE16};
   @media ${device.mobileS} {
     width: ${WIDTH298};
+  }
+  cursor: pointer;
+  :hover {
+    border: 2px solid ${DARK_BORDER};
+  }
+  ::selection {
+    border: 2px solid ${BLUE};
+  }
+  :focus {
+    border-radius: ${RADIUS};
+    border: 2px solid ${BLUE};
+  }
+  :active {
+    border-radius: ${RADIUS};
+    border: 2px solid ${BLUE};
+    box-shadow: 0 0 1pt 3pt ${SOFT_GREY};
   }
   h4 {
     font-family: 'Roboto',sans-serif;
@@ -110,6 +146,22 @@ export const Features = styled.div `
   margin-bottom: ${SPACE16};
   @media ${device.mobileS} {
     width: ${WIDTH298};
+  }
+  cursor: pointer;
+  :hover {
+    border: 2px solid ${DARK_BORDER};
+  }
+  ::selection {
+    border: 2px solid ${BLUE};
+  }
+  :focus {
+    border-radius: ${RADIUS};
+    border: 2px solid ${BLUE};
+  }
+  :active {
+    border-radius: ${RADIUS};
+    border: 2px solid ${BLUE};
+    box-shadow: 0 0 1pt 3pt ${SOFT_GREY};
   }
   h4 {
     font-family: 'Roboto',sans-serif;

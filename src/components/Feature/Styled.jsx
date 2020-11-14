@@ -87,11 +87,14 @@ export const Button = styled.button `
   cursor: pointer;
   :hover {
     text-decoration-line: underline;
+    color: ${BLACK};
+    outline: none;
   }
   :focus {
     outline: none;
-    color: ${BLACK};
+    border: 0px solid;
     text-decoration-line: underline;
+    color: ${BLACK};
   }
   @media ${device.mobileS} {
     font-size: ${SIZE16};

@@ -11,7 +11,7 @@ const Additional = (props) => {
         {
           information.map(info => (
             <div key={info.id}>
-              <img src={getImg(info.img)} alt=""/>
+              <img src={getImg(info.img)} alt={info.name}/>
               <p>{info.name}</p>
             </div>
           ))

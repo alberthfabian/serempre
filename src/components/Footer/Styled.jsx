@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { LIGHT_GREY, GREY, BLACK, WHITE, BLUE, DARK_GREY, SMALL, SPACE96, device } from '../Styled';
+import { LIGHT_GREY, GREY, BLACK, WHITE, BLUE, DARK_GREY, SMALL, SPACE96, LIGHT_BLUE, SOFT_GREY, device } from '../Styled';
 
 export const Section = styled.footer ` 
   background-color: ${LIGHT_GREY};
@@ -51,6 +51,8 @@ export const Info = styled.div `
 `
 
 export const Button = styled.button ` 
+  background-color: transparent;
+  border: 0px solid;
   width: 113px;
   height: 56px;
   background-color: ${BLUE};
@@ -59,6 +61,15 @@ export const Button = styled.button `
   border-radius: 8px;
   color: ${WHITE};
   padding: 16px 24px 16px 24px;
+  cursor: pointer;
+  :hover {
+    background-color: ${LIGHT_BLUE};
+  }
+  :focus {
+    border: 3px solid ${SOFT_GREY};
+    position: outside;
+    outline: none;
+  }
   @media ${device.mobileS} {
     margin-top: 24px;
   }

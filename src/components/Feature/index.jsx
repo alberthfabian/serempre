@@ -17,7 +17,9 @@ const Feature = (props) => {
       <General>
         {
           description.map(des => ( 
-            <Button onClick={() => general(des.id)} key={des.id}>{des.name}</Button>
+            <Button onClick={() => general(des.id)} key={des.id}>
+              {des.name}
+            </Button>
           ))
         }
       </General>
