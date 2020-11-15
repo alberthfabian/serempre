@@ -4,6 +4,14 @@ import { BLACK, GREY_BORDER, DARK_BORDER, BLUE, SOFT_GREY, device, RADIUS } from
 export const Section = styled.section ` 
   display: flex;
   justify-content: center;
+  @media ${device.laptopL} {
+    position: fixed;
+    left: 112px;
+  }
+  @media ${device.desktop} {
+    position: fixed;
+    left: 500px;
+  }
 `
 
 export const Figure = styled.button ` 
@@ -22,6 +30,14 @@ export const Figure = styled.button `
     border: 2px solid ${GREY_BORDER};
     position: inside;
     border-radius: 8px;
+  }
+  @media ${device.mobileM} {
+    width: 340px;
+    height: 223px;
+  }
+  @media ${device.tablet} {
+    width: 543px;
+    height: 337px;
   }
   cursor: pointer;
   :hover {
@@ -44,23 +60,36 @@ export const Figure = styled.button `
       width: 166.11px;
       height: 178.67px;
     }
+    @media ${device.mobileM} {
+      width: 206.11px;
+      height: 218.67px;
+    }
+    @media ${device.tablet} {
+      width: 300.85px;
+      height: 328.98px;
+    }
   }
 `
 
-export const Div = styled.figure ` 
-  width: 299px;
-  height: 44px;
+export const Div = styled.figure `
   margin: 0px;
   display: flex;
   justify-content: space-between;
   margin-top: 8px;
+  @media ${device.mobileS} {
+    width: 299px;
+  }
+  @media ${device.mobileM} {
+    width: 340px;
+  }
+  @media ${device.tablet} {
+    width: 543px;
+  }
 `
 
 export const Button = styled.button ` 
   background-color: transparent;
   border: 0px solid;
-  width: 93px;
-  height: 44px;
   border: 2px solid ${GREY_BORDER};
   position: inside;
   border-radius: 8px;
@@ -68,8 +97,26 @@ export const Button = styled.button `
   :hover {
     border: 2px solid ${BLACK};
   }
+  @media ${device.mobileS} {
+    width: 93px;
+    height: 44px;
+  }
+  @media ${device.tablet} {
+    width: 170.99px;
+    height: 100px;
+  }
   img {
-    width: 47.64px;
-    height: 36.82px;
+    @media ${device.mobileS} {
+      width: 47.64px;
+      height: 36.82px;
+    }
+    @media ${device.mobileM} {
+      width: 49.64px;
+      height: 38.82px;
+    }
+    @media ${device.tablet} {
+      width: 75.9px;
+      height: 83px;
+    }
   }
 `

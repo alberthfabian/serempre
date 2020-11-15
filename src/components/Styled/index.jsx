@@ -4,7 +4,6 @@ const size = {
   mobileL: '425px',
   tablet: '768px',
   laptop: '1024px',
-  laptopM: '1280px',
   laptopL: '1440px',
   desktop: '2560px'
 }
@@ -28,7 +27,9 @@ export const HEIGHT24 = '24px';
 export const HEIGHT32 = '32px';
 export const HEIGHT48 = '48px';
 export const WIDTH200 = '200px';
-export const WIDTH298 = '298.01px';
+export const WIDTH245 = '245px';
+export const WIDTH299 = '299px';
+export const WIDTH340 = '340px';
 export const HEIGHT116 = '116px';
 export const SIZE33 = '33.178px';
 export const SIZE27 = '27.648px';
@@ -43,7 +44,6 @@ export const PADDING24 = '24px';
 export const WHITE = '#FFFFFF';
 export const GREY_BORDER = '#EEEFF2';
 export const DARK_BORDER = '#B6BCC6';
-// export const GREY = '#D2D2D7';
 export const GREY = '#D2D2D7';
 export const LIGHT_GREY = '#F5F5F7';
 export const SOFT_GREY = '#D8DCE0';

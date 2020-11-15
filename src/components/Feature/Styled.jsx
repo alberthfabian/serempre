@@ -5,16 +5,25 @@ export const Section = styled.section `
   @media ${device.mobileS} {
     margin-top: ${SPACE48};
   }
+  @media ${device.tablet} {
+    margin-top: 73px;
+  }
+  @media ${device.laptopL} {
+    margin-top: 48px;
+  }
   h1 {
     color: ${BLACK};
     margin-left: ${ZERO};
     margin-right: ${ZERO};
     margin-bottom: ${ZERO};
-    font-weight: bold;
-    font-size: ${SIZE33};
     font-family: 'Roboto',sans-serif;
     @media ${device.mobileS} {
       margin-top: ${SPACE8};
+      font-weight: ${BOLD};
+      font-size: ${SIZE33};
+    }
+    @media ${device.tablet} {
+      font-size: 39.81px;
     }
   }
 `
@@ -98,5 +107,8 @@ export const Button = styled.button `
   }
   @media ${device.mobileS} {
     font-size: ${SIZE16};
+  }
+  @media ${device.mobileL} {
+    font-size: 19.2px;
   }
 `

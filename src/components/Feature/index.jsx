@@ -13,7 +13,7 @@ const Feature = (props) => {
       <h1>{name}</h1>
       <Slogan>{slogan}</Slogan>
       <Start>STARTING AT</Start>
-      <Value>{value}</Value>
+      <Value>{`$${value}`}</Value>
       <General>
         {
           description.map(des => ( 

@@ -1,29 +1,29 @@
 import React from 'react';
-// import { useServer } from '../../context';
-import { H3, Div, Coverage, Features, Detail, H4, Info } from './Styled';
+import { H3, Div, Coverage, Features, Detail, H4, Info, Container, Contains, Choose } from './Styled';
 
 const Specifications = (props) => {
 
-  // const { general, text } = useServer();
   const { finish, extended, features, specifications } = props;
 
   return (
     <>
       <H3>Choose your finish.</H3>
-      {
-        finish.map(fin => (
-          <Div key={fin.id}>
-            <h4>{fin.name}</h4>
-            <p>{fin.description}</p>
-          </Div>
-        ))
-      }
+      <Choose>
+        {
+          finish.map(fin => (
+            <Div key={fin.id}>
+              <h4>{fin.name}</h4>
+              <p>{fin.description}</p>
+            </Div>
+          ))
+        }
+      </Choose>
       <H3>Would you like to add extended warranty coverage?.</H3>
       {
         extended.map(ext => (
           <Coverage key={ext.id}>
             <h4>{ext.year}</h4>
-            <div>
+            <Container>
               {
                 ext.value === '' ?
                   <span>{ext.description}</span> :
@@ -34,7 +34,7 @@ const Specifications = (props) => {
                   <h4>{`+ $${ext.value}`}</h4> :
                   ''
               }
-            </div>
+            </Container>
           </Coverage>
         ))
       }
@@ -55,11 +55,10 @@ const Specifications = (props) => {
       <Detail>
         {
           specifications.map(specification => (
-            <div key={specification.id}>
+            <Contains key={specification.id}>
               <H4>{specification.name}</H4>
               <Info>{specification.description}</Info>
-              <span></span>
-            </div>
+            </Contains>
           ))
         }
       </Detail>

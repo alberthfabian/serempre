@@ -2,12 +2,28 @@ import styled from 'styled-components';
 import { BLACK, SMALL, device } from '../Styled';
 
 export const Section = styled.section `
-  @media ${device.tablet} {
+  @media ${device.mobileS} {
     display: none;
   }
+  @media ${device.tablet} {
+    display: flex;
+    justify-content: space-between;
+    width: 543px;
+    margin-top: 76px;
+  }
+  @media ${device.laptopL} {
+    position: fixed;
+    left: 112px;
+    top: 576px;
+  }
+  @media ${device.desktop} {
+    position: fixed;
+    left: 500px;
+    top: 576px;
+  }
   div {
+    display: block;
     text-align: center;
-    display: table;
     img {
       @media ${device.mobileS} {
         width: 22px;
@@ -22,15 +38,6 @@ export const Section = styled.section `
       font-weight: normal;
       line-height: 20px;
       display: table-footer-group;
-    }
-    @media ${device.mobileS} {
-      width: 299px;
-      height: 63px;
-      margin-top: 40px;
-    }
-    @media ${device.mobileM} {
-      width: 340px;
-      height: 63px;
     }
   } 
 `
