@@ -29,13 +29,13 @@ El deploy lo realice en Vercel.
 
 ## Autor ✒️
 
-* **Alberh Pérez** - *Completo de inicio a fin* - [villanuevand](https://github.com/villanuevand)
+* **Alberh Pérez** - *Completo de inicio a fin* - [Alberth Pérez](https://github.com/alberthfabian)
 
 ## Cosas con las que me enfrente 📄
 
 * Fue un reto muy chévere ya que me permito realizar un proyecto el cual tenía varios detalles que debía tener en cuenta.
 * Tenia la posibilidad de realizar el proyecto con SASS pero quise practicar Styled Components ya que me parece una buena forma de organizar el CSS.  
-* Realice una simulación del consumo de una API manejando todo desde el estado global de la aplicación.
+* Realice una simulación del consumo de una API, manejando todo desde el estado global de la aplicación.
 
 ---
-⌨️ con ❤️ por [Alberth Perez](https://github.com/alberthfabian) 😊
+⌨️ con ❤️ por [Alberth Pérez](https://github.com/alberthfabian) 😊
